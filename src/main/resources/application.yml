@@ -1,0 +1,23 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/elasticdemo
+    elasticsearch:
+      cluster-name: elasticsearch
+      repositories:
+        enabled: true
+      cluster-nodes: localhost:9300
+        
+      
+  application:
+    name: elastic-search demo
+    
+logging:
+  level:
+    ROOT: INFO
+    com.exaw mple.demo : DEBUG
+    com.lnt.logging : DEBUG
+    org.springframework : ERROR
+    
+application :
+  version : ^project.version^

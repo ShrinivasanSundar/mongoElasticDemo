@@ -1,0 +1,38 @@
+2020-03-17 20:54:27.523  INFO 13352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 20:54:27.528  INFO 13352 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-03-17 20:54:27.657  INFO 13352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 20:54:29.151  INFO 13352 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-03-17 20:54:29.248  INFO 13352 --- [cluster-ClusterId{value='5e70ebadd555eb342884d8ab', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:6}] to localhost:27017
+2020-03-17 20:54:29.256  INFO 13352 --- [cluster-ClusterId{value='5e70ebadd555eb342884d8ab', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4934800}
+2020-03-17 20:54:30.210  INFO 13352 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-03-17 20:54:30.356 ERROR 13352 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userElasticRepository in com.example.demo.serviceimpl.UserElasticServiceImpl required a bean named 'elasticsearchTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'elasticsearchTemplate' in your configuration.
+
+2020-03-17 20:56:21.800  INFO 8696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-17 20:56:21.801  INFO 8696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-03-17 20:56:21.915  INFO 8696 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-17 20:56:22.738  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2020-03-17 20:56:22.740  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2020-03-17 20:56:22.741  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2020-03-17 20:56:22.742  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2020-03-17 20:56:22.743  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2020-03-17 20:56:22.744  INFO 8696 --- [main] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2020-03-17 20:56:26.552  INFO 8696 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-03-17 20:56:26.609  INFO 8696 --- [cluster-ClusterId{value='5e70ec22d555eb21f8a42d92', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2020-03-17 20:56:26.615  INFO 8696 --- [cluster-ClusterId{value='5e70ec22d555eb21f8a42d92', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 6]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4254500}
+2020-03-17 20:56:30.362  INFO 8696 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
